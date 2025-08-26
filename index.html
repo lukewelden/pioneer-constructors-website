@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- 
+    Satisfactory-themed construction company marketing site
+    Tech: HTML5 + vanilla CSS (no JS)
+    Author: Luke + ChatGPT
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pioneer Constructors | Satisfactory-World Factory Builders</title>
+  <meta name="description" content="Pioneer Constructors builds high-throughput, low-lag factories on MASSAGE-2. Conveyor optimization, power audits, train logistics, and megabase delivery." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- System fonts to avoid external requests; clean + fast -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- =========================================
+       Header + Navigation (semantic, no JS)
+       ========================================= -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <!-- Brand: subtle Satisfactory nod without using trademarks directly -->
+      <a class="brand" href="#top" aria-label="Pioneer Constructors home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Pioneer Constructors</span>
+        <!-- <span class="brand__tag">Factory Builders • MASSAGE-2</span>  -->
+      </a>
+
+      <!-- Mobile-friendly navigation -->
+      <nav class="site-nav" aria-label="primary">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="burger"></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#overview" class="links">Overview</a></li>
+          <li><a href="#services" class="links">Services</a></li>
+          <li><a href="#process" class="links">Process</a></li>
+          <li><a href="#stats" class="links">Results</a></li>
+          <li><a class="btn btn--small" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero section with industrial background + CTA -->
+    <section id="top" class="hero">
+      <div class="wrap hero__inner">
+        <h1>
+          Build smarter. Ship faster.<br />
+          <span class="accent">Megabases without the mess.</span>
+        </h1>
+        <p class="lead">
+          We design and construct high-throughput production lines with
+          <strong>belt balance</strong>, <strong>power stability</strong>, and <strong>train-ready logistics</strong>.
+        </p>
+        <div class="hero__ctas">
+          <a class="btn" href="#services">Explore Services</a>
+          <a class="btn btn--ghost" href="#contact">Get a Quote</a>
+        </div>
+        <!-- Conveyor-style divider purely decorative -->
+        <div class="conveyor" aria-hidden="true"></div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main content landmark -->
+  <main id="main">
+    <!-- =========================================
+         Company Overview
+         ========================================= -->
+    <section id="overview" class="section section--gridpaper">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Who we are</h2>
+          <p class="section__kicker">Pioneers building for Pioneers</p>
+        </header>
+
+        <div class="overview">
+          <article class="card card--glass">
+            <h3>Focused on Flow</h3>
+            <p>
+              From <em>Iron Reinforced Plate</em> to <em>Thermal Propulsion Rockets</em>, we blueprint for
+              <strong>throughput first</strong>. Our layouts respect <abbr title="Items Per Minute">IPM</abbr>,
+              belt tiering, and buffer economics—so you scale without spaghetti.
+            </p>
+          </article>
+
+          <article class="card card--glass">
+            <h3>Power-Safe by Design</h3>
+            <p>
+              We audit and segment power grids with automated switchyards, overflow sinks, and peak-load headroom.
+              Brownouts? Not on our watch.
+            </p>
+          </article>
+
+          <article class="card card--glass">
+            <h3>Logistics-Ready</h3>
+            <p>
+              Compact bus lines, sane elevations, and train platforms that actually align with
+              <em>real</em> throughputs. Less backtracking, more dispatching.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         Services (cards, mobile-first grid)
+         ========================================= -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Services</h2>
+          <p class="section__kicker">From first smelter to final rocket</p>
+        </header>
+
+        <ul class="services">
+          <!-- Each li is a service card with icons via emoji for zero assets -->
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">🧱</div>
+              <h3>Factory Foundations</h3>
+            </div>
+            <p>Modular floor grids, vertical bus planning, compact multi-story builds.</p>
+            <ul class="bullets">
+              <li>Starter to Mid-Game Bases</li>
+              <li>Clean Walkways & Clearances</li>
+              <li>Upgrade-safe Geometry</li>
+            </ul>
+          </li>
+
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">⚙️</div>
+              <h3>Conveyor Optimization</h3>  
+            </div>
+            <p>Balanced mergers/splitters, overflow strategies, and belt tier upgrades.</p>
+            <ul class="bullets">
+              <li>IPM-Backed Designs</li>
+              <li>Smart Buffers & Sinks</li>
+              <li>Lag-aware Routing</li>
+            </ul>
+          </li>
+
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">🔌</div>
+              <h3>Power Grid Audits</h3>
+            </div>
+            <p>Segmented grids, emergency reserves, and load-shedding for peace of mind.</p>
+            <ul class="bullets">
+              <li>Fuel/Coal/Nuclear Ready</li>
+              <li>Peak Load Modeling</li>
+              <li>Safe Shutdown Trees</li>
+            </ul>
+          </li>
+
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">🚆</div>
+              <h3>Train Logistics</h3>
+            </div>
+            <p>Station siting, block signaling, and platform throughput matching.</p>
+            <ul class="bullets">
+              <li>Balanced In/Out Lanes</li>
+              <li>Queue-free Routing</li>
+              <li>Scalable Timetables</li>
+            </ul>
+          </li>
+
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">🧪</div>
+              <h3>Late-Game Lines</h3>
+            </div>
+            <p>Aluminum, batteries, turbo motors, and rocket assembly at scale.</p>
+            <ul class="bullets">
+              <li>Ratios & Byproducts</li>
+              <li>Compact Superstructures</li>
+              <li>Maintenance Access</li>
+            </ul>
+          </li>
+
+          <li class="service">
+            <div class="service__header">
+              <div class="service__icon" aria-hidden="true">📐</div>
+              <h3>Blueprints & Reviews</h3>
+            </div>
+            <p>Plan reviews, ratio checks, and tidy-up passes for existing builds.</p>
+            <ul class="bullets">
+              <li>Before/After Deltas</li>
+              <li>Performance Notes</li>
+              <li>Upgrade Paths</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================
+         Process (timeline with caution stripe accents)
+         ========================================= -->
+    <section id="process" class="section section--alt">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Our Process</h2>
+          <p class="section__kicker">Milestones, not maybes</p>
+        </header>
+
+        <ol class="timeline">
+          <li>
+            <h3>Survey & Ratios</h3>
+            <p>We map nodes, unlocks, and current gear. Targets become IPM, not wishes.</p>
+          </li>
+          <li>
+            <h3>Blueprint & Footprint</h3>
+            <p>Grid-aligned floors, vertical buses, and clear logistic corridors.</p>
+          </li>
+          <li>
+            <h3>Build & Balance</h3>
+            <p>Line by line with live balancing, overflow, and buffer control.</p>
+          </li>
+          <li>
+            <h3>Test & Handover</h3>
+            <p>Power soak, belt validation, and a change-log you can trust.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================
+         Results / Stats (simple responsive grid)
+         ========================================= -->
+    <section id="stats" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Proof in the Throughput</h2>
+          <p class="section__kicker">Recent delivery highlights</p>
+        </header>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">1,200<span>/min</span></div>
+            <div class="stat__label">Reinforced Plates</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">650<span>/min</span></div>
+            <div class="stat__label">Batteries</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">96<span>&nbsp;MW</span></div>
+            <div class="stat__label">Peak Headroom</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">0</div>
+            <div class="stat__label">Brownouts Weekly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         Contact (no JS, mailto fallback)
+         ========================================= -->
+    <section id="contact" class="section section--gridpaper">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Contact</h2>
+          <p class="section__kicker">Let’s blueprint your next milestone</p>
+        </header>
+
+        <div class="contact">
+          <form class="contact__form" action="mailto:hello@pioneer-constructors.example" method="post" enctype="text/plain">
+            <!-- All inputs labeled; no JS validation, keep it simple -->
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="scope">Project Scope</label>
+              <select id="scope" name="scope">
+                <option>Starter Base</option>
+                <option>Mid-Game Expansion</option>
+                <option>Late-Game Line</option>
+                <option>Train Logistics</option>
+                <option>Power Audit</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Targets, current unlocks, and pain points…"></textarea>
+            </div>
+            <button class="btn" type="submit">Send Request</button>
+          </form>
+
+          <aside class="contact__aside">
+            <h3>HQ</h3>
+            <p>
+              <span class="accent">Sector:</span> Northern Forest<br />
+              <span class="accent">Planet:</span> MASSAGE-2(A-B)<br />
+              <span class="accent">Comms:</span> hello@pioneer-constructors.ada
+            </p>
+            <div class="caution" aria-hidden="true"></div>
+            <p class="small">
+              <strong>Note:</strong> This is a fictional site themed for the Satisfactory universe.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       Footer
+       ========================================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year" aria-hidden="true">2025</span> Pioneer Constructors — Built for Pioneers.</p>
+      <nav aria-label="footer">
+        <a href="#top">Back to top ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Mobile navigation functionality -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    // Toggle menu when burger is clicked
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.site-nav')) {
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu when clicking a link
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
